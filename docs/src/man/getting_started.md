@@ -40,7 +40,7 @@ Assuming you have 4 cores, one can load 4 processors by
     ```
     Note that this must be done *before* starting Julia.
 
-Also, the command `BLAS.set_num_threads(1)` is generally recommended to set the number of BLAS threads to 1, avoiding [oversubscription](https://ieeexplore.ieee.org/document/5470434)
+Also, the command `using LinearAlgebra; BLAS.set_num_threads(1)` is generally recommended to set the number of BLAS threads to 1, avoiding [oversubscription](https://ieeexplore.ieee.org/document/5470434)
 
 ## Running from command line as script
 
